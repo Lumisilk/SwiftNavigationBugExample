@@ -38,9 +38,10 @@ class SheetViewController: UIViewController {
             return SheetViewController()
         }
         
-        // viewModel will be deinited
+        
 //        observe { [viewModel] in
-//            _ = viewModel
+//            _ = viewModel // viewModel will be deinited
+//            _ = viewModel.isThirdVCPresented // viewModel will be retained, which is expteced.
 //        }
     }
     
